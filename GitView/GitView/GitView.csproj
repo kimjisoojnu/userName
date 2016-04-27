@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Models\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -86,7 +87,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UserNameClass\UserNameClass.csproj">
+      <Project>{b3a18ab1-85af-48bd-9fe0-286c77a64166}</Project>
+      <Name>UserNameClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
